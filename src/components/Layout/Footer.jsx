@@ -2,8 +2,8 @@ import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import { makeStyles } from '@material-ui/core/styles';
-import theoremLogo from './theoremLogo.svg';
-import copyright from './copyright.svg';
+import theoremLogo from './assets/theoremLogo.svg';
+import copyright from './assets/copyright.svg';
 
 const useStyles = makeStyles(theme => ({
   footerBar: {
