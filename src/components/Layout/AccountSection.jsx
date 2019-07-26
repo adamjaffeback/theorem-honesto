@@ -1,5 +1,4 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import nextCycle from './assets/nextCycle.svg';
 import jane from './assets/jane.svg';
