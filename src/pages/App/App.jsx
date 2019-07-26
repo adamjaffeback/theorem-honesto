@@ -2,8 +2,9 @@ import React from 'react';
 import './App.css';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
-import Button from '@material-ui/core/Button';
 import Layout from '../../components/Layout/Layout';
+import ShareFeedback from '../ShareFeedback';
+import { BrowserRouter as Switch, Redirect, Route } from "react-router-dom";
 
 function App() {
   const theme = createMuiTheme({
@@ -24,15 +25,10 @@ function App() {
     <div className="App">
       <ThemeProvider theme={theme}>
         <Layout>
-          <Button variant="contained">
-            Default
-          </Button>
-          <Button variant="contained" color="primary">
-            Primary
-          </Button>
-          <Button variant="contained" color="secondary">
-            Secondary
-          </Button>
+          <Switch>
+            <Redirect from="/" to="/share" />
+            <Route path="/share" exact component={ShareFeedback} />
+          </Switch>
         </Layout>
       </ThemeProvider>
     </div>
